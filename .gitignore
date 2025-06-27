@@ -1,0 +1,8 @@
+**/*.out
+**/tags
+**/*.in
+**/*.swp*
+**/*.backup*
+bin
+objs
+lib
