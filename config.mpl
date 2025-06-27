@@ -2,4 +2,10 @@
 TASKSIZE := 40;
 
 # Enable external c library
-CLIB := false;
+if (FileTools[Exists]("lib") and FileTools[IsDirectory]("lib")) then
+  CLIB := true;
+else
+  CLIB := false;
+end if;
+
+print(CLIB);
